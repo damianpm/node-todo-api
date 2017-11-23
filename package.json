@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server/server.js",
-    "test": "mocha server/**/*.test.js",
+    "_comment": "*****Delete export and set form next line when deploying*****",
+    "start": "export NODE_ENV=development || set \"NODE_ENV=development\" && node server/server.js",
+    "test": "export NODE_ENV=test || set \"NODE_ENV=test\" && mocha server/**/*.test.js",
     "test-watch": "nodemon --exec \"npm test\""
   },
   "engines": {
